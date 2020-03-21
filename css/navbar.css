@@ -1,0 +1,62 @@
+/* NAVBAR */
+#navbar {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.6);
+}
+#navbar form {
+  position: relative;
+  margin-left: 10px;
+}
+
+#navbar .nav-link {
+  color: var(--dark-color);
+}
+
+#navbar .nav-link:hover {
+  color: #fff;
+  background-color: var(--dark-theme-color);
+  border-radius: 50px;
+}
+
+#navbar .dropdown-item:hover {
+  color: #fff;
+  background-color: var(--dark-theme-color);
+}
+
+#navbar form input {
+  border-color: var(--dark-theme-color);
+  border-right: none;
+}
+
+#navbar button[type="submit"] {
+  color: var(--dark-color);
+  border-color: var(--dark-color);
+  border-left: none;
+  background-color: transparent;
+}
+
+#navbar button[type="submit"]:hover {
+  color: #fff;
+  background-color: var(--dark-theme-color);
+  border-color: var(--dark-theme-color);
+  cursor: pointer;
+}
+
+#navbar .dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+#navbar .dropdown > .dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+  pointer-events: none;
+}
+
+#navbar .dropdown-toggle::after {
+  content: none;
+}
+
+@media (max-width: 991px) {
+  #navbar .nav-item {
+    width: 100%;
+    text-align: center;
+  }
+}

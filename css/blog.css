@@ -1,0 +1,33 @@
+/* CONTENT */
+#content article img {
+  max-height: 75%;
+}
+
+/* MOST VIEW */
+#most-view h4 {
+  color: #fff;
+  background-color: blue;
+  margin-bottom: 0;
+}
+
+#most-view .list-group-item:first-child {
+  border-radius: unset;
+}
+
+#most-view .list-group-item {
+  border: 1px solid var(--dark-color);
+}
+
+#most-view li:hover {
+  background-color: var(--dark-theme-color);
+  cursor: pointer;
+}
+
+#most-view li:hover a {
+  color: #fff;
+}
+
+#pagination a:hover {
+  background-color: var(--main-theme-color);
+  color: #fff;
+}

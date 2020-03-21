@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Liên hệ</title>
+    <!-- BOOTSTRAP CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    />
+
+    <!-- MY CSS -->
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/contact_page.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+  </head>
+  <body id="bootstrap-modify">
+    <!-- NAVBAR -->
+    <header class="container-fluid" id="navbar">
+      <nav class="navbar navbar-expand-lg navbar-light container">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul
+            class="navbar-nav ml-auto d-flex flex-lg-row align-items-lg-center flex-column"
+          >
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Trang chủ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Kho giao diện</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                id="dropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Bài viết
+              </a>
+
+              <div class="dropdown-menu row" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Liên hệ</a>
+            </li>
+            <li class="nav-item">
+              <i class="fas fa-phone-volume"></i>0927151535
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <div class="input-group w-100">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Tìm kiếm"
+                aria-label="Search"
+              />
+              <div class="input-group-append">
+                <button class="btn" type="submit">
+                  <i class="fas fa-search"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </nav>
+    </header>
+    <!-- END NAVBAR -->
+
+    <!-- MAP -->
+    <section id="map" class="container mt-5">
+      <img src="./images/map.jpg" alt="map" class="d-block w-100 img-fluid" />
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="container-fluid mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h3 class="text-bold mt-4">Liên hệ</h3>
+            <h5 class="text-bold mt-3">Thiết kế Website nhanh</h5>
+            <h5 class="text-bold mt-3">
+              Công ty công nghệ & dịch vụ Talent Wins
+            </h5>
+            <div class="text-box">
+              <p>
+                <i class="fas fa-map-marker-alt pr-2"></i>Địa chỉ: Tòa nhà CT2
+                Constrexim Thái Hà
+              </p>
+              <p><i class="fas fa-phone pr-2"></i>Điện thoại: 0927151535</p>
+              <p><i class="fas fa-envelope pr-2"></i>contact@web88.vn</p>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex flex-column align-items-center">
+            <form action="" method="POST" class="w-100 d-flex flex-column">
+              <div class="form-group">
+                <label for="contactName">Tên của bạn *</label>
+                <input
+                  id="contactName"
+                  type="text"
+                  name="name"
+                  placeholder="Tên của bạn *"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="contactAddress">Địa chỉ</label>
+                <input
+                  id="contactAddress"
+                  type="text"
+                  name="address"
+                  id=""
+                  placeholder="Địa chỉ *"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="contactEmail">Email *</label>
+                <input
+                  id="contactEmail"
+                  type="email"
+                  name="email"
+                  id=""
+                  placeholder="Email *"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="contactNumber">Số điện thoại *</label>
+                <input
+                  id="contactNumber"
+                  type="number"
+                  name="phone"
+                  placeholder="Điện thoại *"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="contactTitle">Tiêu đề *</label>
+                <input
+                  id="contactTitle"
+                  type="number"
+                  name="phone"
+                  placeholder="Tiêu đề *"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="contactContent">Nội dung *</label>
+                <textarea
+                  id="contactContent"
+                  name="content"
+                  id=""
+                  cols="30"
+                  rows="10"
+                  placeholder="Thông điệp..."
+                  required
+                ></textarea>
+              </div>
+              <input type="submit" value="GỬI" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="footer" class="mt-5">
+      <div class="container-fluid mt-3">
+        <div class="container">
+          <div class="row pt-4">
+            <div class="col-md-4 col-6">
+              <h5>Giao diện Website</h5>
+              <ul>
+                <li><a href="#">Khách sạn (20)</a></li>
+                <li><a href="#">Khách sạn (20)</a></li>
+                <li><a href="#">Khách sạn (20)</a></li>
+                <li><a href="#">Khách sạn (20)</a></li>
+                <li><a href="#">Khách sạn (20)</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4 col-6">
+              <h5>Dịch vụ web88</h5>
+              <ul>
+                <li><a href="#">Thiết kế website</a></li>
+                <li><a href="#">Lập trình App Mobile</a></li>
+                <li><a href="#">Dịch vụ Seo Web</a></li>
+                <li><a href="#">Dịch vụ thiết kế content</a></li>
+                <li><a href="#">Dịch vụ thiết kế đồ họa</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4 col-6">
+              <h5>Về Web88.vn</h5>
+              <ul>
+                <li>Công ty công nghệ và dịch vụ Talent Wins</li>
+                <li>Địa chỉ: Tòa nhà CT2 Constrexim Thái Hà</li>
+                <li>Điện thoại: 0927151535</li>
+                <li>Email: contact@web88.vn</li>
+                <li>Zalo: 0927151535</li>
+                <li>
+                  <a href="#"
+                    ><i class="fab fa-facebook-square fa-2x mr-2"></i
+                  ></a>
+                  <a href="#"><i class="fab fa-youtube fa-2x mr-2"></i></a>
+                  <a href="#"><i class="fab fa-instagram fa-2x mr-2"></i></a>
+                  <a href="#"><i class="fab fa-linkedin fa-2x mr-2"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid bg-success mt-4" id="copyright">
+        <p class="text-center text-white mb-0 p-3">
+          &copy;Copyright 2018 Công ty công nghệ dịch vụ Talent Wins. All Rights
+          Reserved
+        </p>
+      </div>
+      <div class="container-fluid bg-warning" id="business-id">
+        <p class="text-center text-white mb-0 p-3">
+          Mã số doanh nghiệp: 0108134425 - Sở kế hoạch đầu tư TP.Hà Nội - Cấp
+          ngày 16/01/2018
+        </p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

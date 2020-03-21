@@ -1,0 +1,108 @@
+#sidebar {
+  position: fixed;
+  top: 30%;
+  z-index: 1;
+}
+
+#sidebar ul {
+  list-style: none;
+  padding-left: 0.5em;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#sidebar .side_link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#sidebar li {
+  width: min-content;
+  padding: 0.5em 1em;
+  transition: 0.3s ease-in-out;
+}
+
+#sidebar .fa-3x {
+  flex-shrink: 1;
+}
+
+#sidebar .text_link {
+  display: none;
+  margin-left: 0.5em;
+}
+
+#sidebar li:hover {
+  width: 20em;
+  background-color: var(--dark-theme-color);
+  border-radius: 50px;
+}
+
+#sidebar li:hover .text_link {
+  display: block;
+  color: #fff;
+}
+
+#sidebar li:hover .fa-3x {
+  color: #fff;
+}
+
+@media (max-width: 1100px) {
+  #sidebar {
+    width: 100vw;
+    height: 3em;
+    bottom: 0;
+    top: unset;
+    background-color: #ddd;
+  }
+
+  #sidebar ul {
+    flex-direction: row;
+    height: 100%;
+  }
+
+  #sidebar .side_link {
+    flex-direction: column;
+  }
+
+  #sidebar .fa-3x {
+    font-size: 2em;
+    order: 2;
+  }
+
+  #sidebar .text_link {
+    display: none;
+    margin-top: 0.5em;
+    order: 1;
+  }
+
+  #sidebar li:hover .text_link {
+    display: block;
+    color: #fff;
+  }
+
+  #sidebar li:hover .fa-3x {
+    display: none;
+  }
+
+  #footer {
+    padding-bottom: 3em;
+  }
+}
+
+@media (max-width: 500px) {
+  #sidebar li:hover {
+    background-color: var(--dark-theme-color);
+    border-radius: 50px;
+  }
+
+  #sidebar li:hover .text_link {
+    display: none;
+  }
+
+  #sidebar li:hover .fa-3x {
+    display: block;
+  }
+}

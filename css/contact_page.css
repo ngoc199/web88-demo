@@ -1,0 +1,63 @@
+/* MAP */
+#map img:hover {
+  cursor: grab;
+}
+
+/* FORM */
+::placeholder {
+  color: black;
+}
+
+#contact label {
+  margin-top: 1em;
+  font-weight: bold;
+}
+
+#contact input {
+  display: block;
+  width: 100%;
+  padding: 0.5em 1em;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+#contact textarea {
+  border: 1px solid black;
+  width: 100%;
+  padding: 0.5em 1em;
+  border-radius: 15px;
+}
+
+#contact input[type="submit"] {
+  padding: 0.5em 1em;
+  width: fit-content;
+  align-self: flex-end;
+  background-color: transparent;
+  transition: 0.3s;
+}
+
+#contact input[type="submit"]:hover {
+  background-color: var(--dark-theme-color);
+  color: #fff;
+  cursor: pointer;
+}
+
+#contact .text-box {
+  border: 1px solid black;
+  padding: 0.5em 1em;
+}
+
+#contact .container .row div:last-child {
+  border: 1px solid black;
+  padding: 1em;
+}
+
+@media (max-width: 768px) {
+  #contact input[type="submit"] {
+    padding: 0.5em 1em;
+    width: 100%;
+    align-self: unset;
+    background-color: transparent;
+    transition: 0.3s;
+  }
+}

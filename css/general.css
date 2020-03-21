@@ -1,0 +1,63 @@
+:root {
+  --dark-color: black;
+  --main-theme-color: lightgreen;
+  --dark-theme-color: green;
+}
+
+#bootstrap-modify a {
+  color: var(--dark-color);
+}
+
+#bootstrap-modify a:hover {
+  cursor: pointer;
+  color: var(--main-theme-color);
+  text-decoration: none;
+}
+
+#bootstrap-modify .btn-primary {
+  background-color: var(--dark-theme-color);
+  border-color: var(--dark-theme-color);
+  color: #fff;
+}
+
+#bootstrap-modify .btn-primary:hover {
+  opacity: 0.8;
+  color: #fff;
+}
+
+#bootstrap-modify .btn-warning {
+  color: #fff;
+}
+
+#bootstrap-modify .btn-warning:hover {
+  opacity: 0.8;
+  color: #fff;
+}
+
+#bootstrap-modify .page-link {
+  border-color: var(--dark-color);
+  transition: 0.3s;
+}
+
+#bootstrap-modify .page-link:hover {
+  background-color: var(--dark-theme-color);
+  color: #fff;
+}
+
+.bg-transparent {
+  background: none;
+}
+
+.border-none {
+  border: none;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  :root {
+    font-size: 10px;
+  }
+}
